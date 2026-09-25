@@ -1,6 +1,7 @@
 import { Link, Route } from "react-router-dom"
 import React from "react"
 import { useState } from 'react'
+import About from "./about.jsx"
 
 function Page(){
     const [name, setName] = useState("Anushka");
@@ -17,6 +18,19 @@ function Page(){
 
             </nav>
             <button onClick={changeName}>Change Name</button>
+            <form>
+            <input 
+                type="text"
+                value={name}
+                placeholder="Enter your name"
+            />
+            <input
+               type="number"
+               value={age}
+               placeholder="Enter your age"
+            />
+            </form>
+            
 
             
         </div>
